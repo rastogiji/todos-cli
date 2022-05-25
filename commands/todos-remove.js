@@ -16,16 +16,25 @@ const remove = () => {
         },
       ])
       .then((answer) => {
-        if (answer.index < list.length) {
-          list.splice(answer.index, 1);
-          config.set("todosList", list);
-          console.log("Task Removed Successfully".bold.brightGreen);
+        if (!isNaN(answer.index)) {
+          if (answer.index < list.length) {
+            list.splice(answer.index, 1);
+            config.set("todosList", list);
+            console.log("Task Removed Successfully".bold.brightGreen);
+          } else {
+            console.log(
+              `Please enter an index between 0 and ${list.length - 1}`.bold
+                .brightYellow
+            );
+          }
         } else {
-          console.log(
-            `Please enter an index between 0 and ${list.length - 1}`.bold
-              .brightYellow
-          );
+          console.log("Please Enter a valid number".bold.red);
         }
+      })
+      .catch((err) => {
+        console.log(
+          `Uncaught Error: ${err}. Please open an issue in the Github Repo`
+        );
       });
   }
 };

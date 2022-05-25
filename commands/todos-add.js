@@ -18,12 +18,21 @@ const add = () => {
       if (!list) {
         list = [];
       }
-      list.push({
-        task: answer.task,
-        done: false,
-      });
-      config.set("todosList", list);
-      console.log("Task has been added successfully".yellow);
+      if (answer.task) {
+        list.push({
+          task: answer.task,
+          done: false,
+        });
+        config.set("todosList", list);
+        console.log("Task has been added successfully".yellow);
+      } else {
+        console.log("Empty Input. Please Enter Something".bold.red);
+      }
+    })
+    .catch((err) => {
+      console.log(
+        `Uncaught Error: ${err}. Please open an issue in the Github Repo`
+      );
     });
 };
 

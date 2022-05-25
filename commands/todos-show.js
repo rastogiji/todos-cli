@@ -11,13 +11,13 @@ const show = () => {
     );
     list.forEach((task, index) => {
       if (task.done) {
-        console.log(`${index}: ${task.task}`.bold.green);
+        console.log(`${index}: ${task.task}`.bold.brightGreen);
       } else {
-        console.log(`${index}: ${task.task}`.bold.yellow);
+        console.log(`${index}: ${task.task}`.bold.brightYellow);
       }
     });
   } else {
-    console.log("You don't have any tasks yet".bold.red);
+    console.log("You don't have any todos yet".bold.red);
   }
 };
 
