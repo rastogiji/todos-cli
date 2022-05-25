@@ -13,6 +13,9 @@
     "type": "git",
     "url": "https://github.com/rastogiji/todos-cli.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@rastogiji"
+  },
   "author": "Animesh Rastogi",
   "license": "MIT",
   "dependencies": {
