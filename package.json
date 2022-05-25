@@ -1,14 +1,14 @@
 {
   "name": "todos",
   "version": "1.0.0",
-  "description": "",
+  "description": "A CLI to create and manage a Todo List",
   "main": "index.js",
   "bin": "/bin/cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bin/cli.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Animesh Rastogi",
+  "license": "MIT",
   "dependencies": {
     "colors": "^1.4.0",
     "commander": "^9.2.0",
