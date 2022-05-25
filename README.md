@@ -37,7 +37,7 @@ todos show
 
 3.  Mark a Todo as done
 
-```bash
+```
 todos done
 ```
 
@@ -47,7 +47,7 @@ todos done
 todos remove
 ```
 
-5.  Reset the Todo Lis
+5.  Reset the Todo List
 
 ```bash
 todos reset
@@ -56,3 +56,7 @@ todos reset
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](LICENSE.md)
