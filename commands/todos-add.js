@@ -8,7 +8,7 @@ const add = () => {
     .prompt([
       {
         name: "task",
-        message: "Please Enter your Task",
+        message: "Please Enter your Task: ".green,
         type: "input",
       },
     ])
@@ -18,14 +18,12 @@ const add = () => {
       if (!list) {
         list = [];
       }
-      list.push[
-        {
-          task: answer.task,
-          done: false,
-        }
-      ];
+      list.push({
+        task: answer.task,
+        done: false,
+      });
       config.set("todosList", list);
-      console.log("Task has been added successfully".green);
+      console.log("Task has been added successfully".yellow);
     });
 };
 
