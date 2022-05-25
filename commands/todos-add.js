@@ -1,5 +1,32 @@
+const conf = require("conf");
+const inquirer = require("inquirer");
+const colors = require("colors");
+
+const config = new conf();
 const add = () => {
-  console.log("Hello from Add");
+  inquirer
+    .prompt([
+      {
+        name: "task",
+        message: "Please Enter your Task",
+        type: "input",
+      },
+    ])
+    .then((answer) => {
+      let list = config.get("todosList");
+
+      if (!list) {
+        list = [];
+      }
+      list.push[
+        {
+          task: answer.task,
+          done: false,
+        }
+      ];
+      config.set("todosList", list);
+      console.log("Task has been added successfully".green);
+    });
 };
 
 module.exports = add;
