@@ -7,7 +7,7 @@ const show = () => {
   const list = config.get("todosList");
   if (list && list.length) {
     console.log(
-      "Tasks in Yellow are Pending. Tasks in Green are Done".bold.blue
+      "Tasks in Yellow are Pending. Tasks in Green are Done".bold.brightBlue
     );
     list.forEach((task, index) => {
       if (task.done) {
