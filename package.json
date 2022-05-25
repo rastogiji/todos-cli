@@ -7,11 +7,12 @@
     "todos": "/bin/cli.js"
   },
   "scripts": {
-    "start": "node bin/cli.js"
+    "start": "node bin/cli.js",
+    "deploy": "npm publish"
   },
    "repository": {
     "type": "git",
-    "url": "https://github.com/rastogiji/todos-cli.git"
+    "url": "git+https://github.com/rastogiji/todos-cli.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@rastogiji"
