@@ -1,6 +1,6 @@
 {
   "name": "make-todo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI to create and manage a Todo List",
   "main": "index.js",
   "bin":{
@@ -8,6 +8,10 @@
   },
   "scripts": {
     "start": "node bin/cli.js"
+  },
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/rastogiji/todos-cli.git"
   },
   "author": "Animesh Rastogi",
   "license": "MIT",
