@@ -16,8 +16,16 @@ const done = () => {
         },
       ])
       .then((answer) => {
-        list[answer.index].done = true;
-        config.set("todosList", list);
+        if (answer.index < list.length) {
+          list[answer.index].done = true;
+          config.set("todosList", list);
+          console.log("Task Marked Done Successfully".bold.brightGreen);
+        } else {
+          console.log(
+            `Please enter an index between 0 and ${list.length - 1}`.bold
+              .brightYellow
+          );
+        }
       });
   } else {
     console.log("Please add some tasks first".bold.red);

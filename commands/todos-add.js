@@ -8,7 +8,7 @@ const add = () => {
     .prompt([
       {
         name: "task",
-        message: "Please Enter your Task: ".green,
+        message: "Please Enter your Task: ".brightBlue,
         type: "input",
       },
     ])
