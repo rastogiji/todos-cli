@@ -5,7 +5,7 @@ const pkg = require("../package.json");
 const show = require("../commands/todos-show.js");
 const add = require("../commands/todos-add.js");
 const done = require("../commands/todos-done.js");
-const remove = require("../commands/todos-delete.js");
+const remove = require("../commands/todos-remove.js");
 
 program.version(pkg.version);
 
