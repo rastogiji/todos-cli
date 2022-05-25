@@ -1,9 +1,11 @@
 {
-  "name": "todos",
+  "name": "make-todo",
   "version": "1.0.0",
   "description": "A CLI to create and manage a Todo List",
   "main": "index.js",
-  "bin": "/bin/cli.js",
+  "bin":{
+    "todos": "/bin/cli.js"
+  },
   "scripts": {
     "start": "node bin/cli.js"
   },
